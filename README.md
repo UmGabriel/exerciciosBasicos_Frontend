@@ -1,2 +1,2 @@
 # exerciciosBasicos_Frontend
-Praticando...
+Praticando com alguns exercicios
