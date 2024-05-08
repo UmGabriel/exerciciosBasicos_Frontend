@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">
+                Precisamos do seu feedback!
+            </h1>
+            <p id="descricao" class="descricao text-center">
+                Pesquisa empresarial para melhora do local de trabalho.
+            </p>
+        </header>
+
+        <form id="pesquisa-form">
+            <div class="form-group">
+                <label id="nome-label" for="name">Nome</label>
+                <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                class="form-control" 
+                placeholder="Coloque seu nome" required />
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input 
+                type="email" 
+                name="email" 
+                id="email" 
+                class="form-control" 
+                placeholder="Coloque seu email" required />
+            </div>
+
+            <div class="form-group">
+                <label 
+                id="number-label" for="number">
+                    Idade
+                    <span class="clue"></span> 
+                    (opcional)
+                </label>
+                <input 
+                type="number" 
+                name="age" 
+                id="number" 
+                min="14" 
+                max="99" 
+                class="form-control"
+                placeholder="Idade" />
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Qual descreve melhor sua função atual?
+                </p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Selecione uma função</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="trabalho">Empregado</option>
+                    <option value="aprendiz">Aprendiz</option>
+                    <option value="naoDizer">Prefiro não dizer</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p> 
+                    Você recomendaria o essa empresa a um amigo?
+                </p>
+                <label>
+                    <input 
+                    type="radio" 
+                    name="user-recommend" 
+                    value="definitely" 
+                    class="input-radio" checked />
+                    Com certeza
+                </label>
+                <label>
+                    <input 
+                    name="user-recommend" 
+                    value="maybe" 
+                    type="radio" 
+                    class="input-radio" />
+                    Talvez
+                </label>
+                <label>
+                    <input 
+                    name="user-recommend" 
+                    value="not-sure" 
+                    type="radio" 
+                    class="input-radio" />
+                    Acho que não
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Qual área da nossa empresa te chamou mais atenção?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Selecione uma opção</option>
+                    <option value="challenges">Desafios</option>
+                    <option value="projects">Projetos</option>
+                    <option value="community">Comunidade</option>
+                    <option value="openSource">Código-fonte aberto</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    O que você gostaria que seja melhorado?
+                    <span class="clue">
+                    (Marque todas as opções que se aplicam)
+                    </span>
+                </p>
+
+                <label>
+                    <input 
+                    name="prefer" 
+                    value="front-end-projects" 
+                    type="checkbox" 
+                    class="input-checkbox" />
+                    Projetos de front-end
+                </label>
+                <label>
+                    <input 
+                    name="prefer" 
+                    value="back-end-projects" 
+                    type="checkbox" 
+                    class="input-checkbox" />
+                    Projetos de Back-end
+                </label>
+                <label>
+                    <input 
+                    name="prefer" 
+                    value="challenges" 
+                    type="checkbox"
+                    class="input-checkbox" />
+                    Desafios
+                </label>
+                <label>
+                    <input 
+                    name="prefer" 
+                    value="open-source-community" 
+                    type="checkbox" 
+                    class="input-checkbox" />
+                    Comunidade de código-fonte aberto
+                </label>
+                <label>
+                    <input 
+                    name="prefer" 
+                    value="help-rooms" 
+                    type="checkbox" 
+                    class="input-checkbox" />
+                    Salas de ajuda
+                </label>
+                <label>
+                    <input 
+                    name="prefer" 
+                    value="videos" 
+                    type="checkbox" 
+                    class="input-checkbox" />
+                    Videos
+                </label>
+                <label>
+                    <input 
+                    name="prefer" 
+                    value="meetings" 
+                    type="checkbox" 
+                    class="input-checkbox" />
+                    Reuniões
+                </label>
+                <label>
+                    <input 
+                    name="prefer" 
+                    value="forum" 
+                    type="checkbox" 
+                    class="input-checkbox" />
+                    Forum
+                </label>
+                <label>
+                    <input 
+                    name="prefer" 
+                    value="courses" 
+                    type="checkbox"
+                    class="input-checkbox" />
+                    Courses
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Algum comentário ou sugestão?
+                </p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Coloque seu comentario..." >
+                </textarea>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
